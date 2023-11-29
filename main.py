@@ -1,11 +1,14 @@
 # for SX126x series or LLCC68
 from LoRaRF import SX126x
-
-LoRa = SX126x()
 import picamera
 import smbus2
 import bme280
 import time
+
+LoRa = SX126x()
+
+LoRa.begin()
+
 #------------------------------------------------------------------------------
 #MPU6050
 
